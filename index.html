@@ -1,209 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shivam-- developer portfolio</title>
-    <style>
-        *{
-            margin: 0;
-            padding: 0;
-            font-family: 'Times New Roman', Times, serif;
-        }
-        body{
-            background-color: rgb(0, 0, 33);
-            color : white;
-        }
-         main hr {
-            border: 0;
-            background-color: #9c97f1;
-            height: 2px;
-            margin: 60px 84px;
-        }
-        nav{
-            display:flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 80px;
-            background-color: rgb(18, 18,62);
-        }
-        nav ul{
-            display: flex;
-            justify-content: center;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shivam — Developer Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Times New Roman', Times, serif;
+      box-sizing: border-box;
+    }
 
-        }
-        nav ul li{
-            list-style-type: none;
-            margin: 0 23px;
-        }
-           nav ul li a{
-            text-decoration: none;
-            color: white;
-        }
-          nav ul li a:hover{
-            color: rgb(153, 153, 222);
-            font-size: 1.04rem;
-          }
-        .left{
-            font-size: 1.5rem;
-        }
-        .first{
-            display: flex;
-            justify-content: space-around;
-            margin: 130px 0;
-            align-items: center;
+    body {
+      background-color: rgb(0, 0, 33);
+      color: white;
+    }
 
-        }
-        .first > div{
-            width: 30%;
-        }
-        .leftsection{
-            font-size: 3rem;
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 30px;
+      height: 80px;
+      background-color: rgb(18, 18, 62);
+      flex-wrap: wrap;
+    }
 
-        }
-        .leftsection .buttons{
-            padding: 50px 0;
-        }
-        .leftsection .btn{
-            padding: 12px;
-            background: #1e2167;
-            color: white;
-            border: 2px solid white;
-            border-radius: 6px;
-            font-size: 20px;
-            cursor: pointer;
-        }
-        .rightsection img{
-            width: 450px;
-            height: 500px;
-            border-width: 10%;
-            border-radius: 50% ;  
-            border: 2px solid white;
-            
-        }
-        .purple{
-            color: rgb(108, 107,228);
-        }
-        #element{
-            color: rgb(107, 107, 240);
+    nav .left {
+      font-size: 1.8rem;
+    }
 
-        }
-        footer{
-            background-color: #0e0e1a;
+    nav ul {
+      display: flex;
+      list-style: none;
+      flex-wrap: wrap;
+    }
 
+    nav ul li {
+      margin: 0 15px;
+    }
 
-        }
-        .footer{
-            display: flex;
-            padding: 23px 122px;
-            justify-content: space-evenly;
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      transition: 0.3s ease;
+    }
 
-        }
-        .footer ul{
-            list-style: none;
-        }
-        .footer > div{
-            width: 223px;
-        }
-        footer .footer-rights{
-            text-align: center;
-            color: gray;
-            padding: 12px 0;
-        }
-        button{
-            padding: 12px;
-            background: #1e2167;
-            color: white;
-            border: 2px solid white;
-            border-radius: 6px;
-            font-size: 20px;
-            cursor: pointer;
-            }
-            textarea{
-                 padding: 20px;
-                 background: #1e2167;
-                 color: white;
-                 border: 2px solid white;
-                 border-radius: 6px;
+    nav ul li a:hover {
+      color: rgb(153, 153, 222);
+      font-size: 1.04rem;
+    }
 
-            }
+    main hr {
+      border: 0;
+      background-color: #9c97f1;
+      height: 2px;
+      margin: 60px 84px;
+    }
 
-    </style>
+    .first {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 100px 20px;
+    }
+
+    .leftsection {
+      flex: 1;
+      min-width: 300px;
+      max-width: 600px;
+      font-size: 2.5rem;
+    }
+
+    .leftsection .buttons {
+      margin-top: 30px;
+    }
+
+    .leftsection .btn {
+      padding: 12px 20px;
+      margin-right: 10px;
+      background: #1e2167;
+      color: white;
+      border: 2px solid white;
+      border-radius: 6px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: white;
+      color: black;
+    }
+
+    .rightsection {
+      flex: 1;
+      min-width: 300px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .rightsection img {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+      border-radius: 50%;
+      border: 2px solid white;
+    }
+
+    .purple {
+      color: rgb(108, 107, 228);
+    }
+
+    #element {
+      color: rgb(107, 107, 240);
+    }
+
+    footer {
+      background-color: #0e0e1a;
+      margin-top: 60px;
+    }
+
+    .footer {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 30px;
+      justify-content: space-evenly;
+      gap: 30px;
+    }
+
+    .footer > div {
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .footer ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-rights {
+      text-align: center;
+      color: gray;
+      padding: 15px 0;
+    }
+
+    textarea {
+      width: 100%;
+      padding: 10px;
+      background: #1e2167;
+      color: white;
+      border: 2px solid white;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+
+    button {
+      padding: 12px;
+      margin-top: 10px;
+      background: #1e2167;
+      color: white;
+      border: 2px solid white;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .first {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+
+      .leftsection {
+        font-size: 2rem;
+      }
+
+      nav {
+        flex-direction: column;
+        height: auto;
+      }
+
+      nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+      }
+
+      nav ul li {
+        margin: 10px 0;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="left">Shivam's Portfolio</div>
-            <div class="right">
-                <ul>
-                    <li><a href="">Home</li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Projects</a></li>
-                    <li><a href="https://www.linkedin.com/in/shivam-patel-939247326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linkedin id</a></li>
-                    <li><a href="">Contact Me</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="first">
-            <div class="leftsection">
-                Hi, My name is <span class="purple">Shivam Patel</span>
-                <div>I am a passionate </div>
-                 <span id="element"></span>
-                 <div class="buttons">
-                 <button class="btn">Download Resume</button>
-                  <button class="btn">Visit Github</button>
-                  </div>
-            </div>
-             <div class="rightsection">
-                <img src="hacker.jpg.webp">
-             </div>
-                
-        </section>
-        <hr>
-        
-            
+  <header>
+    <nav>
+      <div class="left">Shivam's Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="https://www.linkedin.com/in/shivam-patel-939247326" target="_blank">LinkedIn</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-    </main>
-    <footer>
-        <div class="footer">
-        <div class="footer1">
-            <h3>Shivam's Developer Portfolio </h3>
+  <main>
+    <section class="first">
+      <div class="leftsection">
+        Hi, My name is <span class="purple">Shivam Patel</span>
+        <div>I am a passionate</div>
+        <span id="element"></span>
+        <div class="buttons">
+          <a href="#" class="btn">Download Resume</a>
+          <a href="https://github.com" class="btn" target="_blank">Visit Github</a>
         </div>
-        <div class="footer2">
-    <ul>
-    <li>Home</li>
-    <li>About</li>
-    <li>Services</li>
-    <li>Contact</li>
+      </div>
+      <div class="rightsection">
+        <img src="hacker.jpg.webp" alt="Profile Picture">
+      </div>
+    </section>
+    <hr>
+  </main>
 
-    </ul>
-  </div>
-        <div class="footer3">
-            <ul>
-    <li>
-         <textarea name="feedback" id ="105" placeholder="give your feedback from this project">FEEDBACK </textarea>
-        <button>SUBMIT</button>
-    </li>
-    </ul>
-    
-    
+  <footer>
+    <div class="footer">
+      <div>
+        <h3>Shivam's Developer Portfolio</h3>
+      </div>
+      <div>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+      <div>
+        <label for="feedback">Feedback</label>
+        <textarea id="feedback" placeholder="Give your feedback on this project..."></textarea>
+        <button>Submit</button>
+      </div>
+    </div>
+    <div class="footer-rights">
+      Copyright © shivamportfolio.com | All Rights Reserved
+    </div>
+  </footer>
 
-        </div>
-
-
-        </div>
-        <div class="footer-rights">
-            Copyright &#169;shivamportfolio.com | All Rights Reversed
-        </div>
-    </footer>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-      <script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
     var typed = new Typed('#element', {
-      strings: ['Web Developer', 'Graphic Designer','Web Designer','Video Editor'],
+      strings: ['Web Developer', 'Graphic Designer', 'Web Designer', 'Video Editor'],
       typeSpeed: 50,
+      loop: true
     });
   </script>
 </body>
